@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full h-20 md:flex md:items-center md:justify-between bg-indigo-600 px-5 py-2 md:px-10 rounded-t-sm ">
-      <div className="flex gap-5 items-center">
+      <div className="flex gap-5 items-center justify-center mb-2 md:mb-0">
         <a
           href={whatsappLink}
           target="_blank"
