@@ -11,27 +11,17 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full h-20 flex items-center justify-between bg-indigo-600 px-5 py-2 md:px-10 rounded-b-sm">
-      <div className="flex items-center gap-5">
-        <img
-          className="w-10 h-10 rounded-full"
-          src="https://avatars.githubusercontent.com/u/104315951?v=4"
-          alt="avatar"
-        />
-        <h1 className="text-white text-2xl font-bold">VMS</h1>
-      </div>
+    <header className="w-full h-20 flex items-center justify-between bg-indigo-300 px-5 py-1 md:px-10 rounded-b-sm">
+      <h1 className="text-white text-2xl font-bold font-great-vibes">VMS</h1>
       <nav className="hidden md:flex gap-5 items-center">
-        <Link to="/" className="text-white font-bold hover:text-pink-300">
+        <Link to="/" className="text-white font-bold hover:text-pink-200">
           Inicio
         </Link>
-        <Link to="/about" className="text-white font-bold hover:text-pink-300">
-          Sobre mi
+        <Link to="/about" className="text-white font-bold hover:text-pink-200">
+          Acerca de
         </Link>
-        <Link to="/services" className="text-white font-bold hover:text-pink-300">
+        <Link to="/services" className="text-white font-bold hover:text-pink-200">
           Servicios
-        </Link>
-        <Link to="/contact" className="text-white font-bold hover:text-pink-300">
-          Contacto
         </Link>
       </nav>
       <div className="md:hidden flex items-center">
@@ -40,30 +30,25 @@ export default function Header() {
         </button>
       </div>
       {menuOpen && (
-        <nav className="absolute top-20 left-0 w-full bg-indigo-600 flex flex-col items-center md:hidden">
-          <Link to="/" className="text-white hover:text-pink-300 border-b-2 border-white w-full px-1 text-center">
+        <nav className="absolute top-20 left-0 w-full bg-indigo-300 flex flex-col items-center md:hidden">
+          <Link 
+          to="/" 
+          className="text-white mb-3 hover:text-pink-200 w-full text-center">
           Inicio
         </Link>
           <Link
             to="/about"
-            className="text-white py-2 hover:text-pink-300 border-b-2 border-white w-full px-1 text-center"
+            className="text-white mb-3 hover:text-pink-200 w-full text-center"
             onClick={toggleMenu}
           >
-            Sobre mi
+            Acerca de
           </Link>
           <Link
             to="/services"
-            className="text-white py-2 hover:text-pink-300 border-b-2 border-white w-full px-1 text-center"
+            className="text-white mb-3 hover:text-pink-200 w-full text-center"
             onClick={toggleMenu}
           >
             Servicios
-          </Link>
-          <Link
-            to="/contact"
-            className="text-white py-2 hover:text-pink-300 border-b-2 border-white w-full px-1 text-center"
-            onClick={toggleMenu}
-          >
-            Contacto
           </Link>
         </nav>
       )}
