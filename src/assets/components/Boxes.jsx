@@ -1,13 +1,21 @@
-import { Card, CardContent, Typography, List, ListItem, ListItemText, Box } from '@mui/material';
+import {
+  Card,
+  CardContent,
+  Typography,
+  List,
+  ListItem,
+  ListItemText,
+  Box,
+} from "@mui/material";
 
 export default function Boxes() {
   return (
-    <div className="flex flex-col items-start justify-center gap-0 w-full md:w-full h-full sm:flex-col md:flex-col md:gap-0 md:ml-10">
-      <Box className='w-full p-2'>
-        <Card className='shadow-sm transition-shadow duration-300 hover:shadow-md'>
-          <CardContent className='bg-gray-300'>
+    <div className="flex flex-col items-center justify-center  w-full md:w-full h-full sm:flex-col md:flex-col ">
+      <Box className="w-full p-2">
+        <Card className="shadow-sm transition-shadow duration-300 hover:shadow-md">
+          <CardContent className="bg-gray-300">
             <Typography variant="h3" gutterBottom>
-              <h3 className='text-xl font-semibold'>Formación profesional.</h3>
+              <h3 className="text-xl font-semibold">Formación profesional.</h3>
             </Typography>
             <Typography variant="body1" paragraph>
               <List>
@@ -25,11 +33,11 @@ export default function Boxes() {
           </CardContent>
         </Card>
       </Box>
-      <Box className='w-full p-2'>
-        <Card className='shadow-sm transition-shadow duration-300 hover:shadow-md'>
-          <CardContent className='bg-gray-300'>
+      <Box className="w-full p-2">
+        <Card className="shadow-sm transition-shadow duration-300 hover:shadow-md">
+          <CardContent className="bg-gray-300">
             <Typography variant="h3" gutterBottom>
-              <h3 className='text-xl font-semibold'>Enfoque terapéutico.</h3>
+              <h3 className="text-xl font-semibold">Enfoque terapéutico.</h3>
             </Typography>
             <Typography variant="body1" paragraph>
               <List>
@@ -41,11 +49,11 @@ export default function Boxes() {
           </CardContent>
         </Card>
       </Box>
-      <Box className='w-full p-2'>
-        <Card className='transition-shadow duration-300 hover:shadow-md'>
-          <CardContent className='bg-gray-300'>
+      <Box className="w-full p-2">
+        <Card className="transition-shadow duration-300 hover:shadow-md">
+          <CardContent className="bg-gray-300">
             <Typography variant="h3" gutterBottom>
-              <h3 className='text-xl font-semibold'>Enfoque terapéutico.</h3>
+              <h3 className="text-xl font-semibold">Enfoque terapéutico.</h3>
             </Typography>
             <Typography variant="body1" paragraph>
               <List>
