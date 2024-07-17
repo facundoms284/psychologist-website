@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,7 +20,10 @@ export default function Header() {
         <Link to="/about" className="text-white font-bold hover:text-pink-200">
           Acerca de
         </Link>
-        <Link to="/services" className="text-white font-bold hover:text-pink-200">
+        <Link
+          to="/services"
+          className="text-white font-bold hover:text-pink-200"
+        >
           Servicios
         </Link>
       </nav>
@@ -30,12 +33,13 @@ export default function Header() {
         </button>
       </div>
       {menuOpen && (
-        <nav className="absolute top-20 left-0 w-full bg-indigo-300 flex flex-col items-center md:hidden">
-          <Link 
-          to="/" 
-          className="text-white mb-3 hover:text-pink-200 w-full text-center">
-          Inicio
-        </Link>
+        <nav className="z-40 absolute top-20 left-0 w-full bg-indigo-300 flex flex-col items-center md:hidden">
+          <Link
+            to="/"
+            className="text-white mb-3 hover:text-pink-200 w-full text-center"
+          >
+            Inicio
+          </Link>
           <Link
             to="/about"
             className="text-white mb-3 hover:text-pink-200 w-full text-center"
